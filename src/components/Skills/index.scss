@@ -1,0 +1,39 @@
+.stage-cube-cont {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 18%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+}
+
+.tech-tag, a {
+  color: #ffd700;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.tagcloud {
+  font-family: 'Poppins', sans-serif;  
+  font-size: 25px;
+  font-weight: bold;
+  margin: auto;
+  width: 50%;
+  color:#fff;
+  margin-left: 920px;
+  margin-top: -80px;
+  margin-bottom: 1000%;
+  user-select: none;
+}
+
+.tagcloud--item:hover {
+  color: #ffd700;
+}
+
+@media screen and (max-width: 768px) {
+  .tagcloud {
+    display: none; /* Hide .stage-cube-cont on screens smaller than 768px */
+  }
+}
