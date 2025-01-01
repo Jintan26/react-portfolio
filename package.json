@@ -1,7 +1,8 @@
 {
+  "homepage": "https://Jintan26.github.io/react-portfolio",
   "name": "myreact-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
@@ -11,8 +12,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "deploy": "^1.0.3",
     "gsap-trial": "^3.11.3",
     "loaders.css": "^0.1.2",
+    "npm": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.1.0",
@@ -20,6 +23,7 @@
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "react-tagcloud": "^2.3.1",
+    "run": "^1.5.0",
     "sass": "^1.55.0",
     "TagCloud": "^2.2.0",
     "three": "^0.145.0",
@@ -28,6 +32,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
